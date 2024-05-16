@@ -82,7 +82,7 @@ var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    var jsonResponse = JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented);
     Console.WriteLine(jsonResponse);
 }
 ```
@@ -94,13 +94,13 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "pm2_5": 5.8,
-    "pm10": 9.9,
+    "pm2_5": 5.2,
+    "pm10": 15.1,
     "us-epa-index": 1,
     "gb-defra-index": 1,
-    "carbonMonoxide": 193.6,
-    "ozone": 94.4,
-    "nitrogenDioxide": 1.2,
+    "carbonMonoxide": 210.3,
+    "ozone": 100.1,
+    "nitrogenDioxide": 0.6,
     "sulfurdioxide": 0.8,
     "recommendation": "The air quality in San Francisco is good. It is safe to go outside.",
     "city": "San Francisco"
