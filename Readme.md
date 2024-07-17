@@ -94,16 +94,16 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "pm2_5": 5.2,
-    "pm10": 15.1,
-    "us-epa-index": 1,
+    "carbonMonoxide": 158.6,
+    "city": "San Francisco",
     "gb-defra-index": 1,
-    "carbonMonoxide": 210.3,
-    "ozone": 100.1,
-    "nitrogenDioxide": 0.6,
-    "sulfurdioxide": 0.8,
+    "nitrogenDioxide": 1,
+    "ozone": 59.4,
+    "pm10": 5.1,
+    "pm2_5": 2.2,
     "recommendation": "The air quality in San Francisco is good. It is safe to go outside.",
-    "city": "San Francisco"
+    "sulfurdioxide": 0.6,
+    "us-epa-index": 1
   }
 }
 ```
