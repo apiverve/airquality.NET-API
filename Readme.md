@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new airqualityQueryOptions {
+var queryOptions = new AirQualityQueryOptions {
   city = "San Francisco"
 };
 ```
@@ -94,17 +94,18 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "carbonMonoxide": 158.6,
-    "city": "San Francisco",
+    "pm2_5": 2.4,
+    "pm10": 5,
+    "us-epa-index": 1,
     "gb-defra-index": 1,
-    "nitrogenDioxide": 1,
-    "ozone": 59.4,
-    "pm10": 5.1,
-    "pm2_5": 2.2,
+    "carbonMonoxide": 188.6,
+    "ozone": 73.7,
+    "nitrogenDioxide": 1.1,
+    "sulfurdioxide": 0.5,
     "recommendation": "The air quality in San Francisco is good. It is safe to go outside.",
-    "sulfurdioxide": 0.6,
-    "us-epa-index": 1
-  }
+    "city": "San Francisco"
+  },
+  "code": 200
 }
 ```
 
