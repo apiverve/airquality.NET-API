@@ -6,35 +6,35 @@ namespace APIVerve
 {
 public class data
 {
-    [JsonProperty("carbonMonoxide")]
-    public double carbonMonoxide { get; set; }
+    [JsonProperty("pm2_5")]
+    public double pm25 { get; set; }
 
-    [JsonProperty("city")]
-    public string city { get; set; }
+    [JsonProperty("pm10")]
+    public int pm10 { get; set; }
+
+    [JsonProperty("us-epa-index")]
+    public int usepaindex { get; set; }
 
     [JsonProperty("gb-defra-index")]
     public int gbdefraindex { get; set; }
 
-    [JsonProperty("nitrogenDioxide")]
-    public int nitrogenDioxide { get; set; }
+    [JsonProperty("carbonMonoxide")]
+    public double carbonMonoxide { get; set; }
 
     [JsonProperty("ozone")]
     public double ozone { get; set; }
 
-    [JsonProperty("pm10")]
-    public double pm10 { get; set; }
-
-    [JsonProperty("pm2_5")]
-    public double pm25 { get; set; }
-
-    [JsonProperty("recommendation")]
-    public string recommendation { get; set; }
+    [JsonProperty("nitrogenDioxide")]
+    public double nitrogenDioxide { get; set; }
 
     [JsonProperty("sulfurdioxide")]
     public double sulfurdioxide { get; set; }
 
-    [JsonProperty("us-epa-index")]
-    public int usepaindex { get; set; }
+    [JsonProperty("recommendation")]
+    public string recommendation { get; set; }
+
+    [JsonProperty("city")]
+    public string city { get; set; }
 
 }
 
@@ -48,6 +48,9 @@ public class ResponseObj
 
     [JsonProperty("data")]
     public data data { get; set; }
+
+    [JsonProperty("code")]
+    public int code { get; set; }
 
 }
 
