@@ -10,7 +10,7 @@ public class data
     public double pm25 { get; set; }
 
     [JsonProperty("pm10")]
-    public int pm10 { get; set; }
+    public double pm10 { get; set; }
 
     [JsonProperty("us-epa-index")]
     public int usepaindex { get; set; }
@@ -25,7 +25,7 @@ public class data
     public double ozone { get; set; }
 
     [JsonProperty("nitrogenDioxide")]
-    public double nitrogenDioxide { get; set; }
+    public int nitrogenDioxide { get; set; }
 
     [JsonProperty("sulfurdioxide")]
     public double sulfurdioxide { get; set; }
