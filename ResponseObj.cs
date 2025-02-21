@@ -22,10 +22,10 @@ public class data
     public double carbonMonoxide { get; set; }
 
     [JsonProperty("ozone")]
-    public double ozone { get; set; }
+    public int ozone { get; set; }
 
     [JsonProperty("nitrogenDioxide")]
-    public int nitrogenDioxide { get; set; }
+    public double nitrogenDioxide { get; set; }
 
     [JsonProperty("sulfurdioxide")]
     public double sulfurdioxide { get; set; }
